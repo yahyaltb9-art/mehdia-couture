@@ -3,113 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="مِهْدِيَة كوتور: تصاميم عالية الجودة للنخبة. اكتشف الأناقة الخالدة والتصاميم المخصصة.">
-    <title>Couture مِهْدِيَة </title>
+    <meta name="description" content="مِهْدِيَة كوتور: تصاميم عالية الجودة في مراكش. اكتشف الأناقة الخالدة والتصاميم المخصصة.">
+    <title>mehdia couture | مِهْدِيَة كوتور</title>
     <style>
         body { font-family: 'Tajawal', sans-serif; margin: 0; padding: 0; background: #f8f8f8; color: #333; font-size: 18px; line-height: 1.8; }
-        header { background: #000; color: #fff; padding: 50px; text-align: center; margin-bottom: 30px; }
-        h1 { font-family: 'Amiri', serif; font-size: 4.5em; margin: 0 0 25px 0; }
-        .hero { background: url('https://via.placeholder.com/1920x700?text=مِهْدِيَة+كوتور+البطل') no-repeat center/cover; height: 75vh; display: flex; align-items: center; justify-content: center; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 40px; }
-        .hero h2 { font-size: 4em; margin-bottom: 25px; }
-        .cta { background: gold; color: #000; padding: 25px 45px; text-decoration: none; border-radius: 5px; margin-top: 35px; display: inline-block; font-size: 22px; }
-        section { padding: 120px 80px; max-width: 1400px; margin: 0 auto 60px auto; }
-        footer { background: #000; color: #fff; text-align: center; padding: 50px; font-size: 18px; margin-top: 60px; }
-        img { width: 400px; height: auto; margin: 25px; }
-        form input, form textarea, form select { width: 100%; padding: 18px; margin: 20px 0; font-size: 18px; border: 1px solid #ccc; border-radius: 5px; text-align: right; }
-        button { padding: 18px 35px; font-size: 18px; background: gold; color: #000; border: none; border-radius: 5px; cursor: pointer; }
-        .gallery { display: flex; gap: 60px; flex-wrap: wrap; justify-content: center; margin-top: 40px; }
-        iframe { width: 100%; height: 400px; border: none; margin-top: 25px; }
+        header { background: #000; color: #fff; padding: 30px; text-align: center; position: sticky; top: 0; z-index: 1000; }
+        h1 { font-family: 'Amiri', serif; font-size: 3.5em; margin: 0 0 15px 0; color: gold; }
+        nav a { color: #fff; text-decoration: none; margin: 0 15px; font-size: 18px; transition: 0.3s; }
+        nav a:hover { color: gold; }
+        
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1590732488572-cf3232eb5182?q=80&w=1920&auto=format&fit=crop') no-repeat center/cover; height: 70vh; display: flex; align-items: center; justify-content: center; color: #fff; text-align: center; }
+        .hero h2 { font-size: 3.5em; margin-bottom: 20px; }
+        
+        .cta { background: gold; color: #000; padding: 15px 35px; text-decoration: none; border-radius: 5px; display: inline-block; font-weight: bold; margin-top: 20px; }
+        
+        section { padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
+        h2 { font-family: 'Amiri', serif; font-size: 2.8em; text-align: center; margin-bottom: 40px; border-bottom: 2px solid gold; display: inline-block; width: 100%; }
+
+        .style-container { display: flex; gap: 40px; flex-wrap: wrap; margin-top: 40px; }
+        .style-box { flex: 1; min-width: 300px; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; }
+        .style-box h3 { color: gold; font-size: 2em; margin-bottom: 15px; }
+
+        form { background: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        input, textarea, select { width: 100%; padding: 15px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px; font-family: 'Tajawal', sans-serif; }
+        button { background: #000; color: gold; padding: 15px 40px; border: none; border-radius: 5px; cursor: pointer; font-size: 1.1em; width: 100%; transition: 0.3s; }
+        button:hover { background: #333; }
+
+        footer { background: #000; color: #fff; text-align: center; padding: 40px; margin-top: 60px; }
+        iframe { width: 100%; height: 450px; border: 0; border-radius: 10px; margin-top: 20px; }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
         <h1>مِهْدِيَة كوتور</h1>
         <nav>
-            <a href="#about" style="margin: 0 35px; font-size: 22px;">عننا</a> | <a href="#collections" style="margin: 0 35px; font-size: 22px;">المجموعات</a> | <a href="#order" style="margin: 0 35px; font-size: 22px;">اطلب الآن</a> | <a href="#atelier" style="margin: 0 35px; font-size: 22px;">الورشة</a> | <a href="#contact" style="margin: 0 35px; font-size: 22px;">اتصل بنا</a>
+            <a href="#about">عننا</a>
+            <a href="#order">اطلب الآن</a>
+            <a href="#contact">اتصل بنا</a>
         </nav>
     </header>
-    
+
     <section class="hero">
         <div>
             <h2>الأناقة الخالدة، مصممة خصيصًا لك</h2>
-            <p style="font-size: 26px;">اكتشف أحدث مجموعاتنا من الكوتور العالي.</p>
-            <a href="#collections" class="cta">استكشف الآن</a>
+            <p style="font-size: 24px;">مرحباً بكم في مِهْدِيَة كوتور - مراكش</p>
+            <a href="#order" class="cta">ابدأ تصميمك الخاص</a>
         </div>
     </section>
-    
+
     <section id="about">
         <h2>عن مِهْدِيَة كوتور</h2>
-        <p>تأسست في عام 2007 متخصصة مِهْدِيَة كوتور في الملابس المخصصة التي تجمع بين التقليد والابتكار. نقدم تصاميم كوتور تقليدية (مثل الفساتين البريدال الكلاسيكية والملابس الثقافية) وغير تقليدية (مثل التصاميم الحديثة المدمجة والأفكار الطليعية). كل قطعة مصنوعة يدويًا لضمان فخامة لا مثيل لها، حيث يروي كل خيط قصة من الأناقة والحصرية.</p>
-    </section>
-    
-    <section id="collections">
-        <h2>المجموعات</h2>
-        <p>تصفية حسب: ملابس للنساء | عصري | إتقليدي</p>
-        <div class="gallery">
-            <img src="https://via.placeholder.com/400x500?text=ملابس+للنساء" alt="ملابس للنساء">
-            <img src="https://via.placeholder.com/400x500?text=عصري" alt="عصري">
-            <img src="https://via.placeholder.com/400x500?text=إتقليدي" alt="إتقليدي">
+        <p style="text-align: center; font-size: 1.2em;">منذ عام 2007، ونحن نصيغ الجمال في قلب مراكش من خلال دمج سحر المدينة الحمراء مع الابتكار الحديث.</p>
+        
+        <div class="style-container">
+            <div class="style-box">
+                <h3>النمط التقليدي</h3>
+                <p>نحتفي بالتراث المراكشي من خلال القفطان والمنسوجات الفاخرة والتطريز اليدوي الذي يعكس الأصالة المغربية.</p>
+            </div>
+            <div class="style-box">
+                <h3>النمط العصري</h3>
+                <p>تصاميم جريئة تمزج بين الفن المعاصر والروح المغربية للمرأة التي تبحث عن إطلالة فريدة.</p>
+            </div>
         </div>
     </section>
-    
-    <section id="order">
-        <h2>ضع طلبك</h2>
-        <p>جاهز لتكليف قطعة مخصصة؟ املأ النموذج أدناه لبدء طلبك المخصص. سنتصل بك خلال 24 ساعة للاستشارة.</p>
-        <form action="https://formspree.io/f/your-form-id" method="POST"> <!-- استبدل برابط Formspree الخاص بك لإرسال البريد الإلكتروني -->
-            <input type="hidden" name="_subject" value="طلب جديد من مِهْدِيَة كوتور">
-            <select name="style" required>
-                <option value="">اختر النمط</option>
-                <option value="evening">ملابس للنساء</option>
-                <option value="bridal">عصري</option>
-                <option value="accessories">إتقليدي</option>
-            </select>
-            <input type="text" name="size" placeholder="الحجم المفضل (مثل M,L,S)" required>
-            <input type="text" name="color" placeholder="اللون المفضل" required>
-            <textarea name="details" placeholder="تفاصيل إضافية (مثل تفضيلات القماش، المناسبة)" rows="5"></textarea>
-            <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
-            <button type="submit">أرسل طلب الطلب</button>
-        </form>
-        <br>
-        <a href="https://wa.me/+212 644-208294?text=مرحبا%20مِهْدِيَة%20كوتور،%20أود%20وضع%20طلب%20لقطعة%20مخصصة." target="_blank" class="cta">اطلب عبر واتساب</a> <!-- استبدل +212 644-208294 برقم واتساب الخاص بك -->
+
+    <section id="contact">
+        <h2>اتصل بنا وموقعنا</h2>
+        <div style="text-align: center; margin-bottom: 30px;">
+            <p><strong>📍 العنوان:</strong> المنارة، مراكش 40160، المغرب</p>
+            <p><strong>📞 الهاتف:</strong> <a href="tel:+212644208294" style="color: gold;">+212 644-208294</a></p>
+            <p><strong>✉️ البريد الإلكتروني:</strong> yahyaltb9@gmail.com</p>
+            <p><strong>🕒 ساعات العمل:</strong> الإثنين مفتوح 24 ساعة، ومن الثلاثاء للجمعة (11:30 صباحاً - 10:30 مساءً)</p>
+        </div>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m12!1m12!1m3!1d3397.026!2d-8.0536998!3d31.5889349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x77561007c0a17ed7!2smehdia%20couture!5e0!3m2!1sar!2sma!4v1640000000000" allowfullscreen="" loading="lazy"></iframe>
     </section>
-    
-    <section id="atelier">
-        <h2>الورشة</h2>
-        <p>زورنا في ورشتنا الحصرية في قلب باريس، فرنسا. العنوان: 123 شارع الموضة، 75001 باريس، فرنسا. نحن مفتوحون بموعد فقط.</p>
-        <iframe src="https://share.google/RH1WMQGONmtKUMIwV" allowfullscreen="" loading="lazy"></iframe>
-    </section>
-    
-    <section id="yahyaltb9@gmail.com">
-        <h2>اتصل بنا</h2>
-        <form>
-            <input type="text" Placeholder="الاسم" required>
-            <input type="email" placeholder="البريد الإلكتروني" required>
-            <textarea placeholder="الرسالة" rows="5"></textarea>
-            <button type="submit">أرسل</button>
-        </form>
-    </section>
-    
+
     <footer>
-        <p>&copy; 2023 مِهْدِيَة كوتور. تابِعنا على <a href="#" style="color: gold;">إنستغرام</a>.</p>
+        <p>© 2025 مِهْدِيَة كوتور - مراكش. جميع الحقوق محفوظة.</p>
+        <p>تواصل معنا عبر <a href="https://wa.me/212644208294" style="color: gold; text-decoration: none;">واتساب</a></p>
     </footer>
-    
-    <script>
-        // رسم متحرك بسيط عند التمرير
-        window.addEventListener('scroll', () => {
-            const elements = document.querySelectorAll('section');
-            elements.forEach(el => {
-                if (el.getBoundingClientRect().top < window.innerHeight) {
-                    el.style.opacity = '1';
-                    el.style.transform = 'translateY(0)';
-                }
-            });
-        });
-        document.querySelectorAll('section').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'opacity 0.5s, transform 0.5s';
-        });
-    </script>
+
 </body>
 </html>
